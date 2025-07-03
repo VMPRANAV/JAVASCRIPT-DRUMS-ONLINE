@@ -1,0 +1,54 @@
+html,body{
+  height:100%;
+  padding: 0%;
+  margin: 0%;
+
+}
+body{
+    background-image: url("asset/image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;   
+    justify-content:center ;
+    align-items: center;
+}
+.keys{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.key{
+    border: 2px solid black;   
+padding :20px;
+text-align: center;
+width: 100px;
+margin:10px ;
+background-color: #333;
+
+border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.key kbd{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: block;
+    color: aqua;
+}
+.key .sound{
+    font-size: 14px;
+   color:yellowgreen;
+   font-family: sans-serif;
+}
+.key.playing{
+background-color: #ffc600;
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem #ffc600;
+
+  
+}
